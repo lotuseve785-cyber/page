@@ -1,0 +1,435 @@
+/*media  query*/
+@media (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+
+    /* start main*/
+    main.main {
+        width: 100%;
+    }
+    .online .bg-green{
+        display: none;
+    }
+      .online span{
+       display: none;
+      }
+    .card-info.one {
+        display: block;
+    }
+
+    .card-money.two {
+        display: block;
+    }
+
+    .card-lists.four {
+        width: 350px;
+        display: block;
+    }
+
+    .card-actives.three {
+        width: 350px;
+        display: block;
+    }
+
+    .boxs .rowone,
+    .boxs .rowtwo {
+        width: 150px;
+    }
+
+    .card-lists.four .text-center span {
+        font-size: 30px;
+    }
+
+    .card-lists.four .text-center p {
+        font-size: 20px;
+    }
+
+    .rowone .item1,
+    .rowone .item2,
+    .rowtwo .item3,
+    .rowtwo .item4 {
+        padding: 30px;
+        width: 140px;
+        height: 200px;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .card-row-three {
+        width: 100%;
+        display: block;
+    }
+
+    .table {
+        display: block;
+        max-width: 360px;
+        width: 100%;
+        margin-block: 30px;
+        margin-inline: 10px;
+        padding: 30px;
+
+    }
+
+    table {
+        width: 330px;
+        display: block;
+
+    }
+    .three{
+        display: block;
+    }
+
+    .view {
+        display: block;
+        width: 350px;
+        margin-inline: 20px;
+        margin-block: 20px;
+
+    }
+    .up{
+        display: block;
+        width: 350px;
+            margin-right: 20px;
+            margin-left: 10px;
+    margin-block: 20px;
+    }
+    
+.totel{
+    width: 300px;
+}
+.fun,
+.money,
+.care,
+.home{
+    display: block;
+       width: 300px; 
+       font-size: 10px;
+       
+}
+.totel .line div,
+ .fun .line div{
+    width: 270px;
+
+}
+.line div .blue{
+    width: 80%;
+}
+.end{
+   display: block;
+    width: 350px;
+    margin-right: 10px;
+   margin-top: 30px;
+}
+
+}
+/* موبايل */
+@media (min-width:481px) and (max-width:767px) {
+    .sidebar {
+        display: none;
+    }
+
+    .online {
+        position: relative;
+        right: 50%;
+    }
+
+    .left-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* start main*/
+    main.main {
+        background-color: oklch(22.385% 0.12838 275.552);
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .card-info.one {
+        display: block;
+    }
+
+    .card-money.two {
+        display: block;
+    }
+
+    .card-lists.four {
+        width: 720px;
+        display: block;
+    }
+
+    .card-actives.three {
+        width: 720px;
+        display: block;
+    }
+
+    .card-row-three {
+        width: 100%;
+        display: block;
+    }
+
+    .table {
+        display: block;
+        width: 720px;
+        margin-block: 20px;
+        margin-inline: 20px;
+    }
+
+    table {
+        width: 690px;
+    }
+
+    .three {
+        display: grid;
+        grid-template-areas:
+            "view "
+            "view"
+            "view"
+            "up"
+            "up"
+            "up"
+            "end"
+            "end"
+            "end"
+
+
+
+        ;
+    }
+
+    .view {
+        grid-area: view;
+        width: 720px;
+        margin-inline: 20px;
+        margin-block: 20px;
+
+    }
+
+    .totel {
+        width: 680px;
+        margin-inline: 25px;
+    }
+
+    .fun,
+    .money,
+    .care,
+    .home {
+        padding: 10px;
+        width: 670px;
+
+    }
+
+    .up {
+        grid-area: up;
+        width: 720px;
+        margin-inline: 20px;
+        margin-block: 20px;
+    }
+
+    .up .weeks {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 70px;
+
+    }
+
+    .end {
+        grid-area: end;
+        width: 720px;
+        max-height: 80vh;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+}
+
+/* تابلت */
+@media (min-width: 768px) and (max-width:992px) {
+    #dashboard {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 5%;
+    }
+
+    .navbar .logo-text-info {
+        display: none;
+    }
+
+    .links .one {
+        display: none;
+    }
+
+
+    .links li span i {
+        visibility: visible;
+    }
+
+    main.main {
+        width: 140%;
+    }
+
+    .card-row-three {
+        display: grid;
+        grid-template-areas:
+            "row3 row3 row3 row4n row4  row4"
+            "table table table table table table";
+        margin-top: -20px;
+    }
+
+    .card-actives.three {
+        grid-area: row3;
+        max-width: 390px;
+        max-height: 75vh;
+      
+    }
+
+    .card-lists.four {
+        grid-area: row4;
+        margin-top: 20px;
+
+
+     width: 100%;
+        max-width: 450px;
+        max-height: 60vh;
+    }
+        .rowone .item1,
+    .rowone .item2,
+    .rowtwo .item3,
+    .rowtwo .item4 {
+        width: 160px;
+        height: 150px;
+        
+    }
+  
+
+
+    .table {
+        grid-area: table;
+        width: 100%;
+        max-width: 900px;
+        max-height: 100%;
+    }
+
+    table {
+        width: 100%;
+        max-width: 900px;
+
+    }
+
+    .three {
+        display: grid;
+        grid-template-areas:
+            "view view view up up up up"
+            "end end end cards cards cards cards"
+
+        ;
+        gap: 30px;
+    }
+
+    .view {
+        grid-area: view;
+        margin-top: 90px;
+        width: 450px;
+    }
+
+    .up {
+        height: fit-content;
+         width: 430px;
+        grid-area: up;
+        margin-top: 90px;
+    }
+
+    .end {
+        height: fit-content;
+        width: 430px;
+        position: relative;
+        grid-area: end;
+    }
+
+    .cards-end{
+        grid-area: cards;
+        margin-right: 150px;
+        margin-top: 70PX;
+    }
+}
+
+
+/* شاشات لابتوب */
+@media (min-width: 993px) and (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .main {
+        height: 400vh;
+    }
+
+    .card-money.two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card-row-three {
+        display: grid;
+        grid-template-areas:
+            "row3 row3 row3 row4n row4  row4"
+            "table table table table table table";
+        gap: 20px;
+    }
+
+    .card-actives.three {
+        grid-area: row3;
+        width: 100%;
+    }
+
+    .card-lists.four {
+        grid-area: row4;
+        width: 100%;
+    }
+
+    .table {
+        grid-area: table;
+        width: 100%;
+        max-width: 820px;
+        max-height: 100%;
+    }
+
+    table {
+        width: 100%;
+
+    }
+
+    .three {
+        display: grid;
+        grid-template-areas:
+            "view view view up up up"
+            "end end end cards cards cadrs"
+
+        ;
+    }
+
+    .view {
+        grid-area: view;
+    }
+
+    .up {
+        grid-area: up;
+    }
+
+    .end {
+        grid-area: end;
+    }
+
+    .cards-end {
+        grid-area: cards;
+    }
+
+
+}
+

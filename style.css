@@ -1,0 +1,1419 @@
+/* Global style */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #3b82f6;
+}
+
+html {
+    direction: rtl;
+}
+
+
+body {
+    font-family: IBM Plex Sans Arabic, sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    font-weight: 600;
+   overflow-x: hidden;
+}
+
+.ibm-plex-sans-arabic-thin {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ibm-plex-sans-arabic-extralight {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.ibm-plex-sans-arabic-light {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ibm-plex-sans-arabic-regular {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-sans-arabic-medium {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ibm-plex-sans-arabic-semibold {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.ibm-plex-sans-arabic-bold {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* sidebar desktop*/
+
+#dashboard {
+    background-color: #f8fafc;
+    width: 100%;
+    display: flex;
+}
+
+/* start sidebar*/
+aside.sidebar {
+    background-color: white;
+    width: 15%;
+    min-height: 300vh;
+}
+main{
+    width: 85%;
+}
+
+.sidebar {
+    display: block;
+}
+
+.top-logo {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-icon i {
+    background-color: oklch(46.138% 0.26293 274.56 / 0.849);
+    color: white;
+    font-size: 40px;
+    width: 70px;
+    padding: 15px;
+    box-shadow: 0 0 10px oklch(62.3% .214 259.815);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.logo-text-info p {
+    font-size: 10px;
+    color: rgb(182, 183, 185);
+    margin-top: -20px;
+}
+
+.links {
+    text-align: center;
+
+
+}
+
+ul li {
+    margin-right: -70px;
+}
+
+.links li span i {
+    color: oklch(44.6% .03 256.802);
+
+    display: inline-flex;
+
+
+}
+
+
+.links li span:hover,
+.add-info span:hover {
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.199);
+    padding: 20px;
+    border: 2px solid rgb(247, 247, 247);
+    border-radius: 20px;
+}
+
+
+
+.links li {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.links span i {
+    font-size: 20px;
+}
+
+.links ul #home>span {
+    background-color: oklch(93.2% .032 255.585);
+    color: oklch(48.8% .243 264.376);
+    padding: 15px;
+    border: 2px solid powderblue;
+    border-radius: 10px;
+}
+
+.links ul #home>span i {
+    color: oklch(48.8% .243 264.376);
+}
+
+ul .send span i {
+    width: fit-content;
+    padding: 15px;
+    background-color: oklch(93.2% .032 255.585);
+    color: oklch(48.8% .243 264.376);
+    border-radius: 20px;
+}
+
+h2 {
+
+    color: oklch(69.926% 0.00008 271.152);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 10px;
+
+}
+
+.add-info a {
+    color: oklch(44.6% .03 256.802);
+    font-size: 50px;
+
+}
+
+.add-info .add i {
+    width: fit-content;
+    background-color: oklch(96.2% .044 156.743);
+    color: oklch(62.7% .194 149.214);
+
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.add-info .buy i {
+    width: fit-content;
+    background-color: oklch(94.6% .033 307.174);
+    color: oklch(55.8% .288 302.321);
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
+.add-info .save i {
+    width: fit-content;
+    background-color: rgb(255, 237, 212);
+    color: oklch(64.6% .222 41.116);
+    margin-right: -20px;
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+/*end sisebar*/
+
+
+
+
+
+
+
+
+/* start main*/
+main.main {
+background-color:oklch(22.385% 0.12838 275.552);
+    width: 85%;
+    min-height: 100vh;
+}
+
+.main .cards {
+   display: grid;
+    grid-template-areas:
+        "row1 row1 row1"
+    ;
+    gap: 20px;
+}
+.card-info.one {
+    background: linear-gradient(to right, #e5eff8, white, #e5edf5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 20px;
+    grid-area: row1;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.card-info.one .right-info {
+    display: inline-flex;
+    align-items: center;
+     
+}
+
+
+
+.right-info i {
+    background-color: oklch(46.138% 0.26293 274.56 / 0.849);
+    color: white;
+    font-size: 40px;
+    width: 70px;
+    padding: 15px;
+    box-shadow: 0 0 10px oklch(62.3% .214 259.815);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.tittle {
+    margin-right: 10px;
+}
+
+.right-info .tittle p {
+    font-size: 10px;
+    color: rgb(182, 183, 185);
+    margin-top: -20px;
+}
+
+.card-info.one .bg-green {
+    width: 10px;
+    height: 10px;
+    background-color: oklch(72.3% .219 149.579);
+    border-radius: 200px;
+}
+
+.card-info.one .online {
+    background-color: oklch(96.2% .044 156.743);
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(173, 211, 173);
+    border-radius: 20px;
+    margin-right: 30px;
+
+}
+
+.card-info.one .online span {
+    color: oklch(52.7% .154 150.069);
+
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+/* card one left onfo*/
+.left-info {
+    display: inline-flex;
+    align-items: center;
+}
+
+.left-info .icon button {
+    color: oklch(44.6% .03 256.802);
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.left-info .icon button:hover {
+    background-color: rgba(0, 0, 0, 0.11);
+    border: 1px solid gainsboro;
+}
+
+.user-name {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 1px solid rgb(235, 232, 232);
+    box-shadow: 0 0 10px rgb(230, 228, 228);
+}
+
+.left-info .icon .natf {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: -17px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 100px;
+}
+
+/* card two*/
+    .card-money.two {
+    
+        min-height: 10vh;
+        display: grid;
+        grid-template-areas: "card1 card1 card1 card2 card2 card2 card3 card3 card3";
+        gap: 20px;
+    }
+
+    .card1 {
+       background-color: white;
+        grid-area: card1;
+        margin-right: 20px;
+    }
+
+    .card2 {
+        background-color: white;
+        grid-area: card2;
+    }
+
+    .card3 {
+     background-color: white;
+        grid-area: card3;
+    }
+   
+.card-money.two {
+    margin-inline: 15px;
+}
+
+.card-money.two .card1,
+.card-money.two .card2,
+.card-money.two .card3 {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+    color: oklch(56.926% 0.00006 271.152);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+
+}
+
+.card1 h3,
+.card2 h3,
+.card3 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 10px;
+margin-right: 30px;
+}
+
+.card1 span,
+.card2 span {
+    color: #00a63e;
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+.card3 .red {
+    color: red;
+    font-size: 20px;
+    margin-right: 20px;
+}
+/* end card two row 2*/
+
+/*card thtee*/
+.card-actives.three {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 15px;
+    margin-inline: 20px;
+    margin-block: 40px;
+}
+
+.card-actives.three .create-account,
+.card-actives.three .add-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-account .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.create-account {
+    background-color: oklch(93.2% .032 255.585);
+    border-left: 7px solid oklch(54.6% .245 262.881);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+
+}
+
+.create-account .right .icon i {
+    color: oklch(54.6% .245 262.881);
+    background-color: oklch(93.2% .032 255.585);
+    font-size: 40px;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.card-actives.three h3 {
+    color: oklch(56.926% 0.00006 271.152);
+    font-size: 30px;
+
+
+}
+
+.card-actives.three .info p .card-actives.three .info span {
+    color: rgb(110, 110, 110);
+    margin-top: -15px;
+}
+
+.card-actives.three .create-account .left span {
+    color: oklch(54.6% .245 262.881);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add-card {
+    background-color: oklch(98.2% .018 155.826);
+    border-left: 7px solid oklch(72.3% .219 149.579);
+    border-radius: 20px;
+
+    margin-bottom: 100px;
+
+}
+
+.add-card .right .icon i {
+    background-color: #c4ecd3;
+    color: oklch(72.3% .219 149.579);
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.add-card .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-actives.three .add-card .left span {
+    color: oklch(72.3% .219 149.579);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.card-actives.three .top h3 {
+    color: black;
+}
+
+.card-actives.three .top {
+    border-bottom: 3px solid gainsboro;
+}
+
+.card-row-three .add-card .bottom {
+    cursor: pointer;
+    background-color: white;
+    color: oklch(54.6% .245 262.881);
+    font-size: 20px;
+    font-weight: 500;
+   margin-right: 35%;
+    margin-top: 30px;
+   
+
+}
+
+/*card thtee*/
+.card-row-three{
+     width: 100%;
+        display: grid;
+        grid-template-areas:
+            "row3 table  table table"
+            "row3 table table table"
+            "row3 table table table"
+            "row4 table table table"
+            'row4 table table table'
+            "row4 table table table"
+
+        ;
+}
+
+.card-actives.three {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 15px;
+    margin-inline: 20px;
+    margin-block: 20px;
+width: 100%;
+ max-width: 400px;
+        grid-area: row3;
+    
+}
+    .card-actives.three .bottom {
+        margin-bottom: 1PX;
+    }
+
+.card-actives.three .create-account,
+.card-actives.three .add-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-account .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.create-account {
+    width: 360px;
+    background-color: oklch(93.2% .032 255.585);
+    border-left: 7px solid oklch(54.6% .245 262.881);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+
+}
+
+.create-account .right .icon i {
+    color: oklch(54.6% .245 262.881);
+    background-color: oklch(93.2% .032 255.585);
+    font-size: 40px;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.card-actives.three h3 {
+    color: oklch(56.926% 0.00006 271.152);
+    font-size: 30px;
+
+
+}
+
+.card-actives.three .info p .card-actives.three .info span {
+    color: rgb(110, 110, 110);
+    margin-top: -15px;
+}
+
+.card-actives.three .create-account .left span {
+    color: oklch(54.6% .245 262.881);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add-card {
+    width: 360px;
+    background-color: oklch(98.2% .018 155.826);
+    border-left: 7px solid oklch(72.3% .219 149.579);
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+}
+
+.add-card .right .icon i {
+    background-color: #c4ecd3;
+    color: oklch(72.3% .219 149.579);
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.add-card .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-actives.three .add-card .left span {
+    color: oklch(72.3% .219 149.579);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.card-actives.three .top h3 {
+    color: black;
+}
+
+.card-actives.three .bottom{
+    border-top: 3px solid gainsboro;
+}
+
+.card-actives.three .bottom a {
+    cursor: pointer;
+    background-color: white;
+    color: oklch(54.6% .245 262.881);
+    font-size: 20px;
+    font-weight: 500;
+   margin-right: 30%;
+    margin-top: 30px;
+   
+
+}
+
+/* card four*/
+/* list card */
+.card-lists.four {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 20px;
+    margin-inline: 20px;
+    grid-area: row4;
+}
+
+.card-lists.four .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-lists.four .text-center {
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.card-lists.four .text-center span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.card-lists.four .text-center p {
+    font-size: 30px;
+    color: rgb(167, 167, 167);
+    margin-top: -10px;
+}
+
+.card-lists.four .boxs {
+    display: flex;
+    gap: 20px;
+}
+
+
+    .rowone .item1,
+    .rowone .item2,
+    .rowtwo .item3,
+    .rowtwo .item4 {
+        padding: 30px;
+        width: 150px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+.rowone {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rowone .item1 {
+    background-color: rgb(241, 243, 243);
+    margin-bottom: 20px;
+    border-radius: 20px;
+   
+}
+
+.rowone .item2 {
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+}
+
+.rowtwo {
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+.rowtwo .item3 {
+    background-color: rgb(241, 248, 248);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+
+.rowtwo .item4 {
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+   
+}
+/* start table*/
+.table {
+    height: fit-content;
+    background: rgb(255, 255, 255);
+    max-width: 680px;
+    width: 100%;
+    margin-block: 30px;
+    margin-inline: 10px;
+    padding:30px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+        grid-area: table;
+}
+
+.table .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 630px;
+    border-collapse: collapse;
+    text-align: right;
+  
+
+}
+
+thead {
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+thead th {
+    color: rgb(116, 116, 116);
+}
+ tbody{
+    min-height: 100%;
+ }
+
+.row-one .colu-one .name {
+    margin-top: -20px;
+}
+
+.row-two .colu-one .image i {
+    background-color: oklch(95.4% .038 75.164);
+    color: oklch(64.6% .222 41.116);
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.row-two .colu-one .name h5 {
+    margin-bottom: -20px;
+
+}
+
+.row-one .colu-one .name h5 {
+    margin-bottom: 3px;
+}
+
+.row-one .colu-one .name span {
+    color: rgb(92, 91, 91);
+}
+
+.row-one .colu-two span {
+    background-color: #e5edf5;
+    color: #00a63e;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.row-one .colu-five span {
+    color: #00a63e;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.row-one {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+/* grouping table*/
+
+.row-two,
+.row-two,
+.row-three,
+.row-four,
+.row-five,
+.row-six,
+.row-seven,
+.row-eight {
+    border-bottom: 2px solid rgb(233, 233, 233);
+ 
+
+}
+
+.row-one .colu-one .user,
+.row-two .colu-one .user,
+.row-three .colu-one .user,
+.row-four .colu-one .user,
+.row-five .colu-one .user,
+.row-six .colu-one .user,
+.row-seven .colu-one .user,
+.row-eight .colu-one .user,
+.row-nine .colu-one .user {
+    display: inline-flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.row-one .colu-three,
+.row-two .colu-three,
+.row-three .colu-three,
+.row-four .colu-three,
+.row-five .colu-three,
+.row-six .colu-three,
+.row-seven .colu-three,
+.row-eight .colu-three,
+.row-nine .colu-three {
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.row-one .colu-four span,
+.row-two .colu-four span,
+.row-three .colu-four span,
+.row-four .colu-four span,
+.row-five .colu-four span {
+    background-color: #e5edf5;
+    color: #00a63e;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.row-two .colu-five span,
+.row-three .colu-five span,
+.row-four .colu-five span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.name span {
+    font-size: 10px;
+}
+
+
+/* row two*/
+
+
+.row-two .colu-one .image i {
+    background-color: oklch(95.4% .038 75.164);
+    color: oklch(64.6% .222 41.116);
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.row-two .colu-one .name h5 {
+    margin-bottom: -20px;
+
+}
+
+.row-two .colu-two span {
+    background-color: oklch(95.4% .038 75.164);
+    color: oklch(47% .157 37.304);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+/*row three*/
+.row-three .colu-one {
+    padding-block: 10px;
+}
+
+.row-three .colu-one .user .image i {
+    background-color: oklch(93.2% .032 255.585);
+    color: oklch(54.6% .245 262.881);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+.row-three .colu-one .user .name h5 {
+    margin-bottom: 1px;
+    margin-top: -5px;
+}
+
+.row-three .colu-two span {
+    background-color: oklch(93.2% .032 255.585);
+    color: oklch(42.4% .199 265.638);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/*row four*/
+.row-four {
+    margin-bottom: 70px;
+}
+
+.row-four .colu-one .user .image {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.row-four .colu-one .user .image img,
+.row-five .colu-one .user .image img {
+    border-radius: 30px;
+}
+
+.row-four .colu-one .user .name h5,
+.row-five .colu-one .user .name h5,
+.row-six .colu-one .user .name h5 {
+    margin-bottom: 1px;
+}
+
+.row-four .colu-two span {
+    color: oklch(43.8% .218 303.724);
+    background-color: oklch(94.6% .033 307.174);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/*row five*/
+
+
+.row-five .colu-one .user .image {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.row-five .colu-two span {
+    background-color: #e5edf5;
+    color: #00a63e;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.row-five .colu-five span {
+    color: #00a63e;
+}
+
+/*row six*/
+.row-six .colu-one .user .image {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.row-six .colu-one .user .image i {
+    background-color: oklch(93.6% .032 17.717);
+    color: oklch(57.7% .245 27.325);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.row-six .colu-two span {
+    background-color: oklch(93.6% .032 17.717);
+    color: oklch(44.4% .177 26.899);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.row-six .colu-four span {
+    background-color: oklch(97.3% .071 103.193);
+    color: oklch(47.6% .114 61.907);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 90px;
+}
+/*   start view */
+
+/*grid four row*/
+.three{
+    display: grid;
+    grid-template-areas: 
+    "view up cards "
+     "view end cards  "
+    "view end cards "
+    "view end cards    "
+    "view end cards   "
+    "view end cards  "
+
+   
+    
+    ;
+}
+.view{
+    grid-area: view;
+    width: 400px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+ margin-inline: 20px;
+    margin-block: 20px;
+
+}
+.view .detailes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 20px;
+}
+
+
+.totel{
+    width: 350px;
+ background-color: oklch(96.2% .018 272.314);;
+        border: 1px solid powderblue;
+        border-radius: 30px;
+        margin-inline: 25px;
+}
+.totel .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 30px;
+ 
+
+
+}
+.totel .top h6{
+
+    color: #3b82f6;
+}
+.totel span{
+    
+    color: gray;
+}
+.totel .nub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-inline: 30px;
+}
+.totel .nub h6{
+ color: #3b82f6;
+}
+.totel .nub span{
+    color: #c4ecd3;
+   
+}
+
+.totel .use{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+    margin-inline: 30PX;
+}
+
+.line{
+    margin-inline: 5px;
+}
+.totel .line div{
+    width: 330px;
+    height: 10px;
+    background-color: gainsboro;
+    border-radius: 30px;
+   margin-block: 30px;
+   margin-top: -20px;
+    
+  
+}
+.line div .blue{
+    width: 82.3%;
+    height: 10px;
+    background-color: #3b82f6;
+}
+.fun,
+.money,
+.care,
+.home{
+    padding: 10px;
+       width: 350px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid gray;
+      border-radius: 20px;
+        margin-inline: 30px;
+       margin-bottom: 30px;
+       border-radius: 30px;
+
+
+    
+}
+.fun .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fun .right{
+    display: inline-flex;
+    align-items: center;
+}
+.fun .top .right .icon i{
+    background-color: oklch(95.4% .038 75.164);
+    color:oklch(64.6% .222 41.116); 
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.fun .text,
+.fun .icon{
+    margin-top: -70px;
+}
+.fun .left{
+    margin-top: 50PX;
+}
+.fun .left h6{
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.fun .top .right .text h6{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.fun .top .right .text span{
+    color: rgb(145, 145, 145);
+
+}
+.fun .line div{
+    width: 330px;
+    height: 10px;
+    background-color: gainsboro;
+    border-radius: 30px;
+    margin-block: 30px;
+}
+.fun .line div .orange{
+    width: 50%;
+    height: 10px;
+    background-color: oklch(64.6% .222 41.116);  
+
+    }
+
+
+.money{
+
+}
+.care{
+}
+.home{
+   
+}
+/*start up*/
+.up{
+    grid-area: up;
+    width: 370px;
+    max-height: 55vh;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    margin-right: -60px;
+  margin-top: -170%;
+
+    padding: 20px;
+}
+.up .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-40px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.up .top h6{
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.up .top span{
+    cursor: pointer;
+    color: gray;
+}
+.up .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+.up  .center .sq-green{
+    background-color: #00a63e;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.up .center .sq-red{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.up .weeks{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 70px;
+
+}
+.week1,
+.week2,
+.week3,
+.week4{
+    width: 90px;
+}
+.week2{
+    margin-top: -10px;
+}
+.week4{
+    margin-top: 10px;
+}
+
+.week1 .green{
+    background-color: #00a63e;
+    width: 20px;
+    height: 100px;
+    display: inline-block;
+}
+.week1 .red{
+    background-color: red;
+    width: 20px;
+    height: 60px;
+    display: inline-block;
+}
+.week1 span{
+    display: block;
+    margin-left: 20px;
+}
+.week2 .green{
+    background-color: #00a63e;
+    width: 20px;
+    height: 120px;
+    display: inline-block;
+}
+.week2 .red{
+    background-color: red;
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+}
+.week2 span{
+    display: block;
+    margin-left: 20px;
+}
+.week3 .green{
+    background-color: #00a63e;
+    width: 20px;
+    height: 100px;
+    display: inline-block;
+}
+.week3 .red{
+    background-color: red;
+    width: 20px;
+    height: 60px;
+    display: inline-block;
+}
+.week3 span{
+    display: block;
+       margin-left: 20px;
+}
+.week4 .green{
+    background-color: #00a63e;
+    width: 20px;
+    height: 80px;
+    display: inline-block;
+}
+.week4 .red{
+    background-color: red;
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+}
+.week4 span{
+    display: block;
+       margin-left: 20px;
+}
+.cards-end{
+    width: 200px;
+}
+.end{
+    background-color: white;
+    grid-area: end;
+    width: 370px;
+    max-height: 75vh;
+        border: 1px solid gainsboro;
+    border-radius: 20px;
+    margin-right: -60px;
+   margin-top: -130%;
+    padding: 20px;
+}
+.end .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+.end .top h6{
+    font-size: 15px;
+}
+.end .top span{
+    color: gray;
+}
+.end .items .item1,
+.end .items .item2,
+.end .items .item3{
+    padding: 5px;
+    background-color: #e5edf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(126, 200, 230);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.end .item1 .right,
+.end .item2 .right,
+.end .item3 .right{
+    display: inline-flex;
+}
+.end .items .item1 .right h6{
+    margin-bottom: 3px;
+
+
+}
+.end .item1 .left h6{
+    font-size: 20px;
+    color: gray;
+}
+
+.end .image i{
+    background-color: #abc9e4;
+    color: #3b82f6;
+    font-size: 30px;
+    padding: 5px;
+ margin-top: 20px;
+    margin-left: 5px;
+}
+.end .item1 .left{
+}
